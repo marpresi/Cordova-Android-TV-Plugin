@@ -3,7 +3,7 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.hughisaacs2.cordova.plugins.androidtvplugin"
     version="1.0.3">
-	
+
 	<name>AndroidTVPlugin</name>
     <description>Cordova Android TV Plugin</description>
 	<author email="hughisaacs@acrylicstyle.com" href="http://hughisaacs2.acrylicstyle.com">Hugh Isaacs II</author>
@@ -18,9 +18,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
   </engines>
 
   <platform name="android">
-	
+
 	<config-file target="AndroidManifest.xml" parent="/manifest">
-		<uses-feature android:name="android.software.leanback" android:required="false" />
+		<uses-feature android:name="android.software.leanback" android:required="true" />
 		<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 		<uses-feature android:name="android.hardware.camera" android:required="false" />
 		<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
@@ -40,8 +40,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <category android:name="tv.ouya.intent.category.GAME" />
 		<category android:name="android.intent.category.LEANBACK_LAUNCHER" />
     </config-file>
-	
+
 	<hook type="after_prepare" src="isgame.js" />
   </platform>
-  
+
 </plugin>
