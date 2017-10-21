@@ -20,7 +20,7 @@ To-do
 Install
 -------
 
-`cordova plugin add https://github.com/hughisaacs2/Cordova-Android-TV-Plugin.git`
+`cordova plugin add https://github.com/comrat/Cordova-Android-TV-Plugin.git`
 
 Source
 -------------
