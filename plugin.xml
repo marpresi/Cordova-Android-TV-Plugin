@@ -36,7 +36,7 @@
 		</config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<activity android:label="@string/launcher_name" android:name="com.example.app.TvActivity">
+			<activity android:label="@string/launcher_name" android:name="com.example.android.TvActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN" />
 					<category android:name="android.intent.category.LEANBACK_LAUNCHER" />
