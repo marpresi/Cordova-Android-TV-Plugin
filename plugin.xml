@@ -28,6 +28,10 @@
 			<uses-feature android:name="android.hardware.telephony" android:required="false" />
 		</config-file>
 
+		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+			<application android:banner="@drawable/banner"/>
+		</edit-config>
+
 		<config-file target="AndroidManifest.xml" parent="/manifest/application/activity/intent-filter">
 			<category android:name="android.intent.category.DEFAULT" />
 			<category android:name="android.intent.category.LAUNCHER" />
