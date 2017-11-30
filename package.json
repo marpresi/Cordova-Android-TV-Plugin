@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/HughIsaacs2/Cordova-Android-TV-Plugin.git"
+        "url": "git+https://github.com/comrat/Cordova-Android-TV-Plugin.git"
     },
     "keywords": [
         "ecosystem:cordova",
@@ -23,7 +23,7 @@
   "author": "Hugh Isaacs II",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HughIsaacs2/Cordova-Android-TV-Plugin/issues"
+    "url": "https://github.com/comrat/Cordova-Android-TV-Plugin/issues"
   },
-  "homepage": "https://github.com/HughIsaacs2/Cordova-Android-TV-Plugin"
+  "homepage": "https://github.com/comrat/Cordova-Android-TV-Plugin"
 }
