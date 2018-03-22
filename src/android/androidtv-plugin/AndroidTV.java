@@ -20,8 +20,22 @@ public class AndroidTV extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		//TODO: impl
+		if (action.equals("getStringExtra")) {
+			String message = args.getString(0);
+			this.getActivityStringExtra(message, callbackContext);
+			return true;
+		}
 		return false;
+	}
+
+	private void getActivityStringExtra(String extraString, CallbackContext callbackContext) {
+		Intent intent = this.cordova.getActivity().getIntent();
+		Log.d("AndroidTVPlugin", "try to get string extra: " + extraString);
+		try {
+			callbackContext.success(intent.getStringExtra(extraString));
+		} catch(ActivityNotFoundException e) {
+			callbackContext.error("Failed to get stringExtra");
+		}
 	}
 
 }
