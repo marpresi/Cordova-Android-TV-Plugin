@@ -14,7 +14,7 @@ import android.util.Log;
 
 
 /**
- * * This class provides methods for TTK STB.
+ * * This class provides methods for AndroidTV.
  * */
 public class AndroidTV extends CordovaPlugin {
 
