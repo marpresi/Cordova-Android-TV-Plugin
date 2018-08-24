@@ -14,7 +14,7 @@ Install
 
 Source
 -------------
-https://github.com/hughisaacs2/Cordova-Android-TV-Plugin
+https://github.com/comrat/Cordova-Android-TV-Plugin
 
 License
 -------
