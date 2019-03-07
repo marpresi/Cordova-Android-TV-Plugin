@@ -20,7 +20,7 @@
         "ecosystem:cordova",
         "cordova-android"
     ],
-  "author": "Hugh Isaacs II",
+  "author": "Poberiy Alexey",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/comrat/Cordova-Android-TV-Plugin/issues"
