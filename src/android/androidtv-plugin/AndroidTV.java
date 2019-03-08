@@ -2,6 +2,7 @@ package org.apache.cordova.plugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.engine.SystemWebView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,8 +25,43 @@ public class AndroidTV extends CordovaPlugin {
 			String message = args.getString(0);
 			this.getActivityStringExtra(message, callbackContext);
 			return true;
+		} else if (action.equals("ftiToScreen")) {
+			this.ftiToScreen(callbackContext);
+			return true;
+		} else if (action.equals("setSize")) {
+			int width = args.getInt(0);
+			int height = args.getInt(1);
+			this.setSize(width, height, callbackContext);
+			return true;
 		}
 		return false;
+	}
+
+	private void setSize(int width, int height, CallbackContext callbackContext) {
+		final Double val = 1080.0 / height * 100;
+		final SystemWebView webView = (SystemWebView)super.webView.getEngine().getView();
+
+		webView.post(new Runnable() {
+			@Override
+			public void run() {
+				webView.setPadding(0, 0, 0, 0);
+				webView.setInitialScale(val.intValue());
+			}
+		});
+		callbackContext.success();
+	}
+
+	private void ftiToScreen(CallbackContext callbackContext) {
+		final SystemWebView webView = (SystemWebView)super.webView.getEngine().getView();
+
+		webView.post(new Runnable() {
+			@Override
+			public void run() {
+				webView.getSettings().setLoadWithOverviewMode(true);
+				webView.getSettings().setUseWideViewPort(true);
+			}
+		});
+		callbackContext.success();
 	}
 
 	private void getActivityStringExtra(String extraString, CallbackContext callbackContext) {
