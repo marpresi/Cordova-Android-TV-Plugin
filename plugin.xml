@@ -21,6 +21,7 @@
 		</config-file>
 
 		<source-file src="src/android/androidtv-plugin/AndroidTV.java" target-dir="src/org/apache/cordova/plugin" />
+		<source-file src="src/res/drawable/banner.png" target-dir="res/drawable/"/>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-feature android:name="android.software.leanback" android:required="true" />
