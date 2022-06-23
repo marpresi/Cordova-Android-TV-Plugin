@@ -10,11 +10,14 @@ If you want to interact with the controls on an Android TV or Google TV device j
 Install
 -------
 
-`cordova plugin add https://github.com/comrat/Cordova-Android-TV-Plugin.git`
+`cordova plugin add https://github.com/marpresi/Cordova-Android-TV-Plugin.git`
 
 Source
 -------------
 https://github.com/comrat/Cordova-Android-TV-Plugin
+
+## Forked from
+[comrat/Cordova-Android-TV-Plugin](https://github.com/comrat/Cordova-Android-TV-Plugin)
 
 License
 -------
