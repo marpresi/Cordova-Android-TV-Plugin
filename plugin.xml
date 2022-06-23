@@ -4,8 +4,6 @@
 	id="com.comrat.cordova.plugins.androidtvplugin"
 	version="1.0.0">
 	<name>AndroidTVPlugin</name>
-	<description>Cordova Android TV Plugin</description>
-	<author email="marpresi@gmail.com" href="http://marpresi.com.ar">marpresi</author>
 	<license>MIT</license>
 	<keywords>ecosystem:cordova,cordova-android</keywords>
 	<engines>
